@@ -2,7 +2,7 @@
 - name: Add public mongo gpg key
   apt_key:
     keyserver: keyserver.ubuntu.com
-    id: 0C49F3730359A14518585931BC711F9BA15703C6
+    id: 3F75C80EE56C41F4E49515B62ACD4032058F8B6B
     state: present
 
 - name: Add repo to apt sources list
