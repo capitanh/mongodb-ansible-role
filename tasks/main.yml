@@ -18,6 +18,7 @@
     name: mongodb-org
     state: present
     update_cache: yes
+    force: yes
 
 - name: Copy mongod.conf template
   template:
