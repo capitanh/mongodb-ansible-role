@@ -7,7 +7,7 @@
 
 - name: Add repo to apt sources list
   copy:
-    src: mongodb-org-3.4.list
+    src: mongodb-org-4.2.list
     dest: /etc/apt/sources.list.d
     owner: root
     group: root
@@ -18,7 +18,6 @@
     name: mongodb-org
     state: present
     update_cache: yes
-    force: yes
 
 - name: Copy mongod.conf template
   template:
