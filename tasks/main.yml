@@ -1,9 +1,7 @@
 ---
-#- name: Add public mongo gpg key
-#  apt_key:
-#    keyserver: keyserver.ubuntu.com
-#    id: 3F75C80EE56C41F4E49515B62ACD4032058F8B6B
-#    state: present
+- name: Install required packages
+  apt:
+    deb: http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
 
 - name: Add public mongo gpg key
   apt_key:
