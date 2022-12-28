@@ -7,14 +7,14 @@
 
 - name: Add public mongo gpg key
   apt_key:
-    url: https://www.mongodb.org/static/pgp/server-4.2.asc
+    url: https://www.mongodb.org/static/pgp/server-6.0.asc
     state: present
     validate_certs: no
 
 - name: Add repo to apt sources list
   copy:
-    src: mongodb-org-4.2.list
-    dest: /etc/apt/sources.list.d
+    src: mongodb-org-6.0.list
+    dest: /etc/apt/sources.list.d/
     owner: root
     group: root
     mode: 0644
