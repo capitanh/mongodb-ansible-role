@@ -1,12 +1,7 @@
 ---
 - name: Install required packages
   apt:
-    name: "{{packages}}"
-    state: present
-    update_cache: yes
-  vars:
-    packages:
-    - openssl
+    deb: http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.17_amd64.deb
 
 - name: Add public mongo gpg key
   apt_key:
